@@ -9,7 +9,7 @@ const AppDataSource = new DataSource({
   username: "root",
   password: "1234",
   database: "demo_secret_token",
-  synchronize: true,
+  synchronize: false,
   logging: false,
   entities: [User],
   migrations: ["./dist/src/migrations/*.js"],

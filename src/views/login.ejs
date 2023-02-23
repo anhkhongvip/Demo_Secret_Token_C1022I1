@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <%- include("layouts/head.ejs")-%>
     <title>Login</title>
-</head>
-<body>
-    Login
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row d-flex justify-content-center ">
+        <div class="col-8 text-center" style="font-size:40px">Login</div>
+        <br/>
+        <div class="col-6">
+          <form id="form-auth" method="post" action="">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                name="username"
+                id="username"
+                aria-describedby="username"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                id="password"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <%- include("layouts/script.ejs")-%>
+  </body>
 </html>
